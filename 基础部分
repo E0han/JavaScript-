@@ -1,0 +1,55 @@
+字符串操作：
+toUpperCase() 把一个字符串全变为大写
+toLowerCase() 把一个字符串全变为小写
+indexOf() 会搜索指定字符串出现的位置
+substring() 返回制定索引区间的子串
+
+例子:
+
+var s="Hello World";
+
+s.toUpperCase();//会返回HELLO WORLD
+
+s.toLowerCase();//会返回hello world
+
+s.indexOf('World')//返回6,因为搜索"World"的第一个字"W"排在s[6],忽略空格的
+
+s.substring(0,5);//从s[0]到s[5], 返回"Hello"
+
+s.substring(7);//从索引7开始到结束,相当于[7,end]
+
+数组
+
+arr.length;//获取数组arr的长度
+
+arr[1]=12;//给数组arr第二个值赋值
+
+indexOf(); //搜索数组中指定元素的位置
+
+slice();//相当于str里的substring(); 截取arr的部分元素
+
+arr.slice(0,3);// 从索引0开始，到索引3结束，但不包括索引3
+
+push();//像数组arr的末尾添加若干元素
+
+pop();//将数组最后一个元素删除
+
+unshift()；//向数组arr的头部添加若干元素
+
+shift();//将数组arr的第一个元素删除
+
+sort();//对当前数组进行排序，会直接修改arr的元素顺序
+
+reverse()；//把arr的元素的顺序反转:
+
+var s=[1,2,3];
+
+s.reverse();
+
+s;//[3,2,1]
+
+splice();// 用于修改数组array，语法是：s.splice(x,y,"a","b"),其中代表 从数组s索引的第x个数开始删除y个元素，然后添加"a","b"这两个元素。y可以为0，就代表不删除
+
+concat();//将当前的array和另一个数组连接起来，并返回一个新的数组
+
+join();把当前Array的每个元素都用指定的字符串连接起来，然后返回连接后的字符串
